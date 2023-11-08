@@ -1,0 +1,127 @@
+.green-icon {
+    color: greenyellow;
+}
+
+.red-icon {
+    color: red;
+}
+
+.orange-icon {
+    color: darkorange;
+}
+
+.yellow-icon {
+    color: #ffea00;
+}
+
+.custom-table-small {
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.custom-text {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+.custom-container .row .col-sm-6,
+.custom-container .row .col-xl-3 {
+    width: 40%;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    /* width: 25%;  행 전체의 1/4 크기 */
+}
+
+.compliance .score .item{
+    flex: 1;
+    text-align: center;
+
+}
+
+
+
+.score, .item {
+    text-align: center;
+
+}
+
+.chart-container {
+    display: flex;
+    padding: 10px;
+}
+
+#myChart2 {
+    display: block;
+    margin: 0 auto;
+
+}
+
+body, html {
+    height: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+.row,
+.col-md-9 {
+    height: 100%;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* 첫 번째 요소와 두 번째 요소의 세로 비율을 1:2로 조절합니다. */
+}
+
+.borderline {
+    border: 1px solid bisque;
+    border-radius: 10px;
+}
+
+.borderline2 {
+    border: 1px;
+    border-radius:8px;
+}
+
+#diagnosisItemCount, #diagnosisResult, #complianceName {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+.font-family-azure {
+    font-family: 'Kanit', sans-serif;
+}
+
+.font-family-korean {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.font-tiny::after {
+    content: '/100';
+    font-size: small;
+}
+
+.font-items-tiny::after {
+    content: 'items';
+    font-size: small;
+}
+
+
+.parentRelative {
+    position: relative;
+}
+
+#myChart2 {
+    width: 100%; /* 부모 요소의 너비를 100%로 설정. */
+    height: 100%; /* 부모 요소의 높이를 100%로 설정. */
+}

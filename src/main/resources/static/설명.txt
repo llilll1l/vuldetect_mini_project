@@ -1,0 +1,26 @@
++유저
++컴플라이언스
++Project
++diagnosis
++diagnosisItem
+
+
+
+
++
+지정된 Project round++
+diagnosis, diagnosisItem에 project 정보와 round값 넘겨준다
+
++점검 항목 초기에 실행되지 않게 하기
+
+
+2023.09.15
+1.diagnosisItem에서 diagnos의id는 사실상 필요가 없는줄 아니었는데 있었다.(result점수를 내야한다.)
+2.compliance와 항목과의 관계
+3.진단결과 상세에서 사실상 필요한것은 엔티티와 상세(json)
+
+
+2023.09.21
+1.진단결과,진단점수 entity별 취합하기
+2.진단결과 별 drop down에 테이블 만들어서 엔티티, 진단결과 값(true,false를 양호 취약으로 바꾸기) 넣기
+

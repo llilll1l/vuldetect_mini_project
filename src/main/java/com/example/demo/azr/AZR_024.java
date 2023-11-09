@@ -31,7 +31,7 @@ public class AZR_024 implements AZR_Scanner{
 
     public String category;
 
-    public Boolean Result; //이것은 필요할것인가..?
+    public Boolean Result;
 
     public String resourceGroup;
 
@@ -74,8 +74,8 @@ public class AZR_024 implements AZR_Scanner{
 
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
-
-
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan());
         AZRCommand.idValue = jsonOutput.get("id").asText();

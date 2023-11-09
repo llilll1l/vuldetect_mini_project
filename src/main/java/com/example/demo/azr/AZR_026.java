@@ -68,6 +68,8 @@ public class AZR_026 implements AZR_Scanner{
 
         //networkRulet 노드의 defaultAction 키의 밸류값이 Allow면 취약 Deny면 양호
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan());
         AZRCommand.idValue = jsonOutput.get("id").asText();

@@ -67,7 +67,8 @@ public class AZR_108 implements AZR_Scanner {
         //clientCertEnabled : false 취약
         //clientCertEnabled : true 양호
         jsonOutput = CommonMethod.executeProcessAndGetJsonOutput_2(commandAndArgs);
-        //System.out.println(jsonOutput.toPrettyString());
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan());
         //setResourceGroup(findWebAppResourceId());

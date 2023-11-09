@@ -73,6 +73,7 @@ public class AZR_044 implements AZR_Scanner {
         //Azure Storage 계정의 Blob 서비스에 대한 로깅을 활성화하고, 읽기(read), 쓰기(write), 삭제(delete) 작업에 대한 로깅을 활성화하며, 로그를 90일 동안 보관하도록 설정
 
         jsonOutput = executeProcessAndGetJsonOutput_3(commandAndArgs);
+        System.out.println(getName());
         System.out.println(jsonOutput.toPrettyString());
         setResult(azrScan());
 

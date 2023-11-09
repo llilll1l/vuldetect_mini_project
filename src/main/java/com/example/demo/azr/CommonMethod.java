@@ -108,7 +108,7 @@ public class CommonMethod {
 
     //=----------------------------------parseAndResult_1key,2key는 이분법. 양호 값과 취약 값 모두 정해준다
     public static Boolean parseAndResult_1key(JsonNode jsonNode, String getKey1, String malValue, Object value) throws IOException {
-
+        //System.out.println(jsonNode.toPrettyString());
         if (jsonNode.isArray()) {    //배열로 시작할때
             for (JsonNode accountNode : jsonNode) {
                 JsonNode SetNode = accountNode.get(getKey1);
@@ -133,12 +133,13 @@ public class CommonMethod {
                 return true;
             }
         }
+        System.out.println("취약");
         return false;
     }
 
 
     public static Boolean parseAndResult_2key(JsonNode jsonNode, String getKey1, String getKey2, String malValue, String value) {
-        //  System.out.println(jsonNode.toPrettyString());
+        //System.out.println(jsonNode.toPrettyString());
         if (jsonNode.isArray()) {    //배열로 시작할때
             for (JsonNode accountNode : jsonNode) {
                 JsonNode SetNode = accountNode.get(getKey1).get(getKey2);
@@ -196,6 +197,7 @@ public class CommonMethod {
                 return false;
             }
         }
+        System.out.println("취약");
         return false;
 
     }

@@ -203,8 +203,6 @@ public class ProjectController {
     }
 
 
-
-    //select 된 값 보이게 만들기
     @GetMapping("/dashBoard/{projectId}/{roundSelect}")
     public String loadDiagnosis(@PathVariable Long projectId,
                                 @PathVariable Integer roundSelect,

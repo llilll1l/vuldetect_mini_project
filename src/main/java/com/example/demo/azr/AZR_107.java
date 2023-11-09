@@ -67,7 +67,8 @@ public class AZR_107 implements AZR_Scanner {
         //양호 값 update : az resource update --ids /subscriptions/65a2081f-ab92-4edc-84cd-1db788b315eb/resourceGroups/kisia-astron/providers/Microsoft.Web/sites/kisia-astron-appservice --set properties.httpsOnly=true
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
-        //System.out.println(jsonOutput.toPrettyString());
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan()); //siteConfig 의 minTlsVersion 값이 "1.2" 가 아닐때 모두 취약
         //setResourceGroup(findWebAppResourceId());

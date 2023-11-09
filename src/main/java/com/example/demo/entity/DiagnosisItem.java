@@ -134,8 +134,9 @@ public class DiagnosisItem {
         }
 
         // 확인해보자
-        System.out.println("취약한 수: " + vulEntityCount);
-        System.out.println("안전한 수: " + safeEntityCount);
+        System.out.println("취약한 엔티티 수: " + vulEntityCount);
+        System.out.println("양호한 엔티티 수: " + safeEntityCount);
+        System.out.println();
 
         // 취약한 객체가 하나라도 있으면 "취약"을 반환, 그렇지 않으면 "양호"반환
         return vulEntityCount > 0 ? "취약" : "양호";

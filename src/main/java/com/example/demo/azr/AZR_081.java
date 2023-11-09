@@ -86,6 +86,9 @@ public class AZR_081 implements AZR_Scanner{
         filteredObjects = filterJsonObjectsByValue(jsonOutput, equalValue);
 
         //System.out.println(":" + filteredObjects);
+        System.out.println(getName());
+        System.out.println(filteredObjects.toPrettyString());
+
 
         setResult(azrScan());
 

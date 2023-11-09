@@ -89,7 +89,8 @@ public class  AZR_075 implements AZR_Scanner{
 
         filteredObjects = filterJsonObjectsByValue(jsonOutput, equalValue);
 
-        //System.out.println("AZR_075 :" + filteredObjects.toPrettyString());
+        System.out.println(getName());
+        System.out.println(filteredObjects.toPrettyString());
 
         setResult(azrScan());
 
@@ -143,7 +144,7 @@ public class  AZR_075 implements AZR_Scanner{
             }
             // "allOf"의 값이 null이 아니거나 비어있지 않을 경우 "enabled" 값에 따라 판단
             boolean value = parseAndResult_1key_1value(filteredObjects,"enabled", "true");
-            System.out.println("enabled :" + value);
+            //System.out.println("enabled :" + value);
             return value;
         }
         // filteredObjects가 null인 경우 취약으로 판단

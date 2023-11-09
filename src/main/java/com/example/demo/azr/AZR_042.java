@@ -74,6 +74,8 @@ public class AZR_042 implements AZR_Scanner {
         //취약값 안됨.... 더 알아보자
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         //setResourceGroup(findStorageResource());
         setResult(azrScan());

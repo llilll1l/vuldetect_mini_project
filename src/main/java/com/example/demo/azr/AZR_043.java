@@ -74,6 +74,8 @@ public class AZR_043 implements AZR_Scanner{
 
         //enabled 키의 밸류값이 false면 취약 true면 양호
         jsonOutput = executeProcessAndGetJsonOutput_3(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         //setResourceGroup(findStorageResource());
         setResult(azrScan());

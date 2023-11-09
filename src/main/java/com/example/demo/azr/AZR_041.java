@@ -74,6 +74,8 @@ public class AZR_041 implements AZR_Scanner{
         //networkRulset 노드의 defaultAction 키의 밸류값이 Allow면 취약 Deny면 양호
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
 
         //setResourceGroup(findStorageResource()); //setresourceGroup 해주기

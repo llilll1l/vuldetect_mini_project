@@ -68,6 +68,8 @@ public class AZR_033 implements AZR_Scanner{
 
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan());
         AZRCommand.idValue = jsonOutput.get("id").asText();

@@ -66,6 +66,8 @@ public class AZR_031 implements AZR_Scanner{
         //보안 설정 방법: az resource update --ids /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name} --set properties.enabled=true
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         setResult(azrScan());
         AZRCommand.idValue = jsonOutput.get("id").asText();

@@ -70,6 +70,9 @@ public class AZR_045 implements AZR_Scanner{
 
         //table 노드의 delete 키의 밸류값이 false면 취약 true면 양호
         jsonOutput = executeProcessAndGetJsonOutput_3(commandAndArgs);
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
+
 
         setResult(azrScan());
 

@@ -68,7 +68,8 @@ public class AZR_106 implements AZR_Scanner{
 
 
         jsonOutput = executeProcessAndGetJsonOutput_2(commandAndArgs);
-        //System.out.println(jsonOutput.toPrettyString());
+        System.out.println(getName());
+        System.out.println(jsonOutput.toPrettyString());
 
         //httpsOnly값이 true일 시에만 "양호" 그 외에는 "취약"(false)
 
